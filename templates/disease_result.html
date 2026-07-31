@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+Plant Disease Result | AgroPredict
+</title>
+
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container result-card">
+
+
+
+<h1>
+🍃 Plant Disease Detection Result
+</h1>
+
+
+
+
+<!-- Uploaded Image -->
+
+<div class="info-box">
+
+
+<h2>
+🌿 Uploaded Leaf Image
+</h2>
+
+
+<img src="{{ url_for('static', filename='uploads/' + image) }}"
+class="result-image">
+
+
+</div>
+
+
+
+
+
+
+<!-- Disease Name -->
+
+<div class="info-box">
+
+
+<h2>
+Detected Disease
+</h2>
+
+
+<h1 style="color:green;">
+
+{{ disease }}
+
+</h1>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Confidence -->
+
+
+<div class="info-box">
+
+
+<h2>
+📊 Prediction Confidence
+</h2>
+
+
+
+<div class="progress-container">
+
+
+<div class="progress-bar"
+id="confidenceBar"
+data-confidence="{{ confidence }}">
+
+
+</div>
+
+
+</div>
+
+
+<p>
+Confidence: {{ confidence }}%
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Symptoms -->
+
+
+<div class="info-box">
+
+
+<h2>
+⚠️ Symptoms
+</h2>
+
+
+<p>
+
+{{ symptoms }}
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Treatment -->
+
+
+<div class="info-box">
+
+
+<h2>
+💊 Treatment Recommendation
+</h2>
+
+
+<p>
+
+{{ treatment }}
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Prevention -->
+
+
+<div class="info-box">
+
+
+<h2>
+🌱 Prevention Methods
+</h2>
+
+
+<p>
+
+{{ prevention }}
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<a href="/" class="back-btn">
+
+⬅ Back Home
+
+</a>
+
+
+
+<a href="/disease" class="back-btn">
+
+🔄 Check Another Leaf
+
+</a>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+
+let bar = document.getElementById("confidenceBar");
+
+
+let confidence = bar.getAttribute("data-confidence");
+
+
+bar.style.width = confidence + "%";
+
+
+bar.innerHTML = confidence + "%";
+
+
+
+</script>
+
+
+
+</body>
+
+
+</html>

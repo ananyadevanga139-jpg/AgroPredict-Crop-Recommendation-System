@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+Fertilizer Recommendation Result | AgroPredict
+</title>
+
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="container result-card">
+
+
+
+<h1>
+🌿 Fertilizer Recommendation Result
+</h1>
+
+
+
+
+
+<div class="info-box">
+
+
+<h2>
+Recommended Fertilizer:
+</h2>
+
+
+<h1 style="color:green;">
+{{ fertilizer }}
+</h1>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="info-box">
+
+
+<h2>
+🌱 About Fertilizer
+</h2>
+
+
+<p>
+
+The recommended fertilizer is selected based on
+soil properties, crop requirements, moisture level,
+and available nutrients.
+
+</p>
+
+
+<p>
+
+Using the correct fertilizer helps improve soil
+quality, crop growth, and overall production.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="info-box">
+
+
+<h2>
+🚜 Fertilizer Usage Guidelines
+</h2>
+
+
+<ul style="text-align:left;">
+
+
+<li>
+Apply fertilizer according to crop growth stage.
+</li>
+
+
+<li>
+Avoid excessive fertilizer usage.
+</li>
+
+
+<li>
+Maintain proper soil moisture after application.
+</li>
+
+
+<li>
+Regularly check soil nutrient levels.
+</li>
+
+
+<li>
+Follow sustainable farming practices.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="info-box">
+
+
+<h2>
+🌍 Benefits
+</h2>
+
+
+<ul style="text-align:left;">
+
+
+<li>
+Improves crop productivity
+</li>
+
+
+<li>
+Provides essential nutrients to plants
+</li>
+
+
+<li>
+Enhances soil fertility
+</li>
+
+
+<li>
+Supports healthy plant growth
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<a href="/" class="back-btn">
+
+⬅ Back Home
+
+</a>
+
+
+
+<a href="/fertilizer" class="back-btn">
+
+🔄 Try Another Prediction
+
+</a>
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+</html>

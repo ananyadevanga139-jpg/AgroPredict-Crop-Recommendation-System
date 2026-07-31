@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+Crop Recommendation Result | AgroPredict
+</title>
+
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container result-card">
+
+
+
+<h1>
+🌾 Crop Recommendation Result
+</h1>
+
+
+
+<div class="info-box">
+
+
+<h2>
+Recommended Crop:
+</h2>
+
+
+<h1 style="color:green;">
+{{ crop }}
+</h1>
+
+
+
+</div>
+
+
+
+
+
+<div class="info-box">
+
+
+<h2>
+🌱 About This Crop
+</h2>
+
+
+<p>
+
+{{ crop }} is a suitable crop based on the
+provided soil nutrients and environmental conditions.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="info-box">
+
+
+<h2>
+🌍 Farming Guidance
+</h2>
+
+
+<ul style="text-align:left;">
+
+
+<li>
+Maintain proper soil moisture
+</li>
+
+
+<li>
+Use balanced fertilizers according to soil condition
+</li>
+
+
+<li>
+Monitor crop health regularly
+</li>
+
+
+<li>
+Follow suitable irrigation practices
+</li>
+
+
+<li>
+Protect crops from pests and diseases
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+<a href="/" class="back-btn">
+
+⬅ Back Home
+
+</a>
+
+
+<a href="/crop" class="back-btn">
+
+🔄 Try Another Prediction
+
+</a>
+
+
+
+</div>
+
+
+</body>
+
+
+</html>

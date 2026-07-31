@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>
+Fertilizer Recommendation
+</title>
+
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="container">
+
+
+<h1>
+🌿 Fertilizer Recommendation
+</h1>
+
+
+
+
+<form action="/predict_fertilizer"
+method="POST"
+class="prediction-form">
+
+
+
+<input type="number"
+step="any"
+name="temperature"
+placeholder="Temperature"
+required>
+
+
+
+<input type="number"
+step="any"
+name="humidity"
+placeholder="Humidity"
+required>
+
+
+
+<input type="number"
+step="any"
+name="moisture"
+placeholder="Moisture"
+required>
+
+
+
+
+<select name="soil_type" required>
+
+<option value="">
+Select Soil Type
+</option>
+
+<option>
+Sandy
+</option>
+
+<option>
+Loamy
+</option>
+
+<option>
+Black
+</option>
+
+<option>
+Red
+</option>
+
+
+</select>
+
+
+
+
+
+<select name="crop_type" required>
+
+<option value="">
+Select Crop Type
+</option>
+
+
+<option>
+Rice
+</option>
+
+
+<option>
+Wheat
+</option>
+
+
+<option>
+Maize
+</option>
+
+
+<option>
+Cotton
+</option>
+
+
+<option>
+Tomato
+</option>
+
+
+</select>
+
+
+
+
+
+<input type="number"
+name="N"
+placeholder="Nitrogen (N)"
+required>
+
+
+
+<input type="number"
+name="P"
+placeholder="Phosphorus (P)"
+required>
+
+
+
+<input type="number"
+name="K"
+placeholder="Potassium (K)"
+required>
+
+
+
+
+
+<button type="submit">
+
+🌿 Recommend Fertilizer
+
+</button>
+
+
+
+</form>
+
+
+
+
+<a href="/" class="back-btn">
+
+⬅ Back Home
+
+</a>
+
+
+
+</div>
+
+
+
+</body>
+
+
+</html>
