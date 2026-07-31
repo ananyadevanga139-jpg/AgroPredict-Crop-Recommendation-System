@@ -38,8 +38,10 @@ crop_encoder = pickle.load(
 
 # Disease Model
 
+# Disease Model
 disease_model = tf.keras.models.load_model(
-    "models/disease_model.keras"
+    "models/disease_model.keras",
+    compile=False
 )
 
 
