@@ -1,159 +1,204 @@
-# 🌱 AgroPredict - Crop Recommendation & Plant Disease Prediction System
+# 🌱 AgroPredict - Crop Recommendation System
 
-AgroPredict is an AI-based agricultural assistance system that helps users make better farming decisions by recommending suitable crops, fertilizers, and detecting plant diseases using Machine Learning and Deep Learning techniques.
+<p align="center">
 
-## 🚀 Features
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=22D3EE&center=true&vCenter=true&width=700&lines=AgroPredict+Crop+Recommendation+System;Machine+Learning+Based+Agriculture+Solution;Smart+Farming+Using+AI"/>
 
-* 🌾 Crop Recommendation System
+</p>
 
-  * Recommends suitable crops based on soil and environmental parameters.
 
-* 🧪 Fertilizer Recommendation System
+<p align="center">
 
-  * Suggests appropriate fertilizers for better crop productivity.
+A machine learning-based crop recommendation system that helps users identify suitable crops based on soil and environmental conditions.
 
-* 🍃 Plant Disease Detection
+</p>
 
-  * Detects plant diseases from uploaded images using a CNN-based deep learning model.
 
-* 🌐 Web Application
+---
 
-  * User-friendly interface for real-time predictions.
+# 🌐 Live Demo
 
-## 🛠️ Technologies Used
+🚀 Application:
 
-* Python
-* Flask
-* TensorFlow
-* Keras
-* Scikit-learn
-* Machine Learning
-* Deep Learning
-* HTML
-* CSS
-* JavaScript
+(Add your deployment link here)
 
-## 📂 Project Structure
 
-```
-AgroPredict/
+---
+
+# ✨ Features
+
+✅ Crop recommendation using machine learning  
+✅ Predicts suitable crops based on input parameters  
+✅ User-friendly web interface  
+✅ Flask-based application  
+✅ Fast prediction results  
+✅ Data-driven agricultural insights  
+✅ Simple and responsive design  
+
+
+---
+
+# 🛠️ Tech Stack
+
+
+## 🎨 Frontend
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=html,css,javascript"/>
+
+</p>
+
+
+Technologies:
+
+- HTML
+- CSS
+- JavaScript
+
+
+---
+
+## ⚙️ Backend
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=python,flask"/>
+
+</p>
+
+
+Technologies:
+
+- Python
+- Flask
+
+
+---
+
+## 🤖 Machine Learning
+
+Technologies:
+
+- Scikit-learn
+- Pandas
+- NumPy
+- Machine Learning Algorithms
+- Pickle Model
+
+
+---
+
+## 🗄️ Tools
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode"/>
+
+</p>
+
+
+---
+
+# 🚀 Installation & Setup
+
+
+## Clone Repository
+
+```bash
+git clone https://github.com/ananyadevanga139-jpg/AgroPredict-Crop-Recommendation-System.git
+Navigate to Project
+cd AgroPredict-Crop-Recommendation-System
+Install Dependencies
+pip install -r requirements.txt
+Run Application
+python app.py
+
+Application runs on:
+
+http://127.0.0.1:5000
+📊 Input Parameters
+
+The model uses agricultural parameters to recommend suitable crops:
+
+Nitrogen (N)
+Phosphorus (P)
+Potassium (K)
+Temperature
+Humidity
+pH Value
+Rainfall
+🧠 Machine Learning Workflow
+Dataset Collection
+        ↓
+Data Preprocessing
+        ↓
+Feature Selection
+        ↓
+Model Training
+        ↓
+Model Evaluation
+        ↓
+Crop Recommendation
+📂 Project Structure
+AgroPredict-Crop-Recommendation-System
+
 │
 ├── app.py
-├── models/
-│   ├── crop_model.pkl
-│   ├── fertilizer_model.pkl
-│   ├── disease_model.keras
 │
-├── templates/
-├── static/
-├── disease_info.py
-├── disease_classes.json
+├── model
+│   └── crop_model.pkl
+│
+├── templates
+│   └── index.html
+│
+├── static
+│   ├── style.css
+│   └── images
+│
+├── dataset
+│   └── crop_data.csv
+│
 ├── requirements.txt
-├── Procfile
-└── runtime.txt
-```
+│
+└── README.md
+📸 Application Screenshots
 
-## ⚙️ Installation & Setup
+Add screenshots here:
 
-### 1. Clone the repository
+screenshots/
 
-```bash
-git clone https://github.com/your-username/AgroPredict-Crop-Recommendation-System.git
-```
+├── home.png
+├── prediction.png
+└── result.png
+🎯 Future Enhancements
 
-### 2. Navigate to project folder
+🚀 Weather API integration
+🚀 Real-time soil analysis
+🚀 AI-based farming recommendations
+🚀 Crop yield prediction
+🚀 Mobile application support
+🚀 Multilingual farmer support
 
-```bash
-cd AgroPredict-Crop-Recommendation-System
-```
+👩‍💻 Author
+Ananya K
 
-### 3. Create virtual environment
+Full Stack & AI Developer
 
-```bash
-python -m venv venv
-```
+Connect With Me
 
-### 4. Activate environment
+GitHub:
 
-Windows:
+https://github.com/ananyadevanga139-jpg
 
-```bash
-venv\Scripts\activate
-```
+LinkedIn:
 
-### 5. Install dependencies
+https://www.linkedin.com/in/ananya-k-741310325/
 
-```bash
-pip install -r requirements.txt
-```
+Portfolio:
 
-### 6. Run application
+https://personal-portfolio-website-r80y3p6a0-ananya-3073.vercel.app
 
-```bash
-python app.py
-```
+⭐ Support
 
-Application will run at:
-
-```
-http://127.0.0.1:5000/
-```
-
-## ☁️ Deployment
-
-The AgroPredict web application is deployed using **Render**.
-
-Deployment steps:
-
-1. Push project code to GitHub repository.
-2. Connect GitHub repository with Render.
-3. Configure Python environment.
-4. Install dependencies from `requirements.txt`.
-5. Deploy the Flask application using Gunicorn.
-
-Deployment configuration:
-
-**Procfile**
-
-```
-web: gunicorn app:app
-```
-
-**Runtime**
-
-```
-Python 3.11
-```
-
-## 📌 Model Details
-
-### Crop Recommendation Model
-
-* Machine Learning based classification model.
-* Uses soil and environmental parameters.
-
-### Fertilizer Recommendation Model
-
-* Predicts suitable fertilizer recommendations.
-
-### Disease Detection Model
-
-* CNN-based deep learning model.
-* Saved as:
-
-```
-disease_model.keras
-```
-
-## 🎯 Future Enhancements
-
-* Add more crop and disease classes.
-* Improve model accuracy with larger datasets.
-* Add mobile application support.
-* Integrate weather API for real-time recommendations.
-
-## 👩‍💻 Developed By
-
-**Ananya K**
-
-
+If you like this project, consider giving it a star on GitHub.
